@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo Consciente de Energia | Design Fluido</title>
+    <style>
+      
+        :root {
+            --laranja-escuro: #c0392b;
+            --laranja-principal: #d35400;
+            --laranja-vibrante: #e67e22;
+            --amarelo-ouro: #f39c12;
+            --amarelo-brilhante: #f1c40f;
+            --amarelo-suave: #fffdf5;
+            --texto-escuro: #2c3e50;
+            --texto-suave: #555;
+            --fundo-pagina: #ffffff;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--fundo-pagina);
+            color: var(--texto-escuro);
+            line-height: 1.8;
+        }
+
+       
+        header {
+            background: linear-gradient(135deg, var(--amarelo-brilhante), var(--amarelo-ouro));
+            color: var(--texto-escuro);
+            text-align: center;
+            padding: 4rem 1.5rem;
+            border-bottom: 2px solid rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+            color: var(--laranja-principal);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            margin: 0 auto;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+
+        main {
+            max-width: 800px; 
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+        }
+
+        h2.section-title {
+            color: var(--laranja-principal);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2.section-title::before {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--amarelo-ouro);
+        }
+
+        .habito-item {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 20px;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee; 
+        }
+
+        .habito-item:last-child {
+            border-bottom: none; 
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .habito-icone {
+            font-size: 2.5rem;
+            color: var(--amarelo-ouro);
+            text-align: center;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 5px;
+        }
+
+        .habito-content h3 {
+            color: var(--laranja-escuro);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .habito-content p {
+            color: var(--texto-suave);
+            font-size: 1rem;
+        }
+
+        
+        .destaque-energia {
+            background-color: var(--amarelo-suave);
+            padding: 3rem;
+            border-radius: 12px;
+            border-left: 6px solid var(--laranja-vibrante);
+        }
+
+        .destaque-energia h2.section-title {
+            margin-bottom: 1.5rem;
+        }
+        
+        .destaque-energia h2.section-title::before {
+            display: none; 
+        }
+
+        .subtitulo-energia {
+            font-size: 1.1rem;
+            color: var(--texto-escuro);
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+        }
+
+        .renovavel-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .renovavel-item h4 {
+            color: var(--laranja-principal);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .renovavel-item p {
+            color: var(--texto-suave);
+            font-size: 0.95rem;
+        }
+
+      
+        footer {
+            background-color: var(--laranja-principal);
+            color: var(--branco);
+            text-align: center;
+            padding: 2rem;
+            border-top: 2px solid rgba(0,0,0,0.05);
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+       
+        @media screen and (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            h2.section-title { font-size: 1.6rem; }
+            .habito-item {
+                grid-template-columns: 1fr; 
+                gap: 10px;
+                text-align: center;
+            }
+            .habito-icone {
+                font-size: 2rem;
+                justify-content: center;
+            }
+            .habito-item.timeline-content {
+                text-align: center;
+            }
+            .destaque-energia {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Energia Inteligente</h1>
+        <p>Aprenda pequenos hábitos que reduzem o consumo e integram fontes limpas ao seu dia a dia.</p>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2 class="section-title"> Hábitos de Consumo Consciente</h2>
+            
+            <div class="habito-item">
+                <div class="habito-icone"></div>
+                <div class="habito-content">
+                    <h3>Combata o Consumo Fantasma</h3>
+                    <p>Muitos aparelhos em standby continuam gastando energia. Tire da tomada eletrônicos que não estão em uso ou utilize réguas com interruptor.</p>
+                </div>
+            </div>
+
+            <div class="habito-item">
+                <div class="habito-icone"></div>
+                <div class="habito-content">
+                    <h3>Chuveiro: Uso Racional</h3>
+                    <p>O chuveiro elétrico é um dos maiores consumidores de energia. Reduza o tempo de banho e prefira a posição 'Verão' em dias quentes.</p>
+                </div>
+            </div>
+
+            <div class="habito-item">
+                <div class="habito-icone"></div>
+                <div class="habito-content">
+                    <h3>Geladeira Eficiente</h3>
+                    <p>Mantenha a borracha de vedação em dia, evite abrir a porta sem necessidade e nunca guarde alimentos quentes dentro dela.</p>
+                </div>
+            </div>
+
+            <div class="habito-item">
+                <div class="habito-icone"></div>
+                <div class="habito-content">
+                    <h3>Iluminação Inteligente</h3>
+                    <p>Aproveite ao máximo a luz natural abrindo cortinas. Quando precisar de luz artificial, substitua lâmpadas antigas por versões LED.</p>
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="destaque-energia">
+            <h2 class="section-title"> Integrando Energia Limpa</h2>
+            <p class="subtitulo-energia">Descubra como aproveitar fontes de energia renováveis no seu cotidiano:</p>
+
+            <div class="renovavel-item">
+                <h4>Painéis Solares Residenciais</h4>
+                <p>Instalar placas fotovoltaicas no telhado permite gerar a própria energia, gerando economia drástica e valorizando o imóvel.</p>
+            </div>
+
+            <div class="renovavel-item">
+                <h4>Assinatura de Energia Solar</h4>
+                <p>Mesmo morando em apartamento ou aluguel, você pode assinar cotas de fazendas solares e receber créditos diretamente na sua conta de luz.</p>
+            </div>
+
+            <div class="renovavel-item">
+                <h4>Aquecimento Solar de Água</h4>
+                <p>Uma solução simples que usa o calor do sol para aquecer a água do banho e da cozinha, reduzindo o uso do chuveiro elétrico.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pequenas escolhas diárias transformam o nosso futuro.</p>
+    </footer>
+
+</body>
+</html>
